@@ -1,0 +1,2 @@
+#!/bin/bash
+cgg hello.c -o cisfun
