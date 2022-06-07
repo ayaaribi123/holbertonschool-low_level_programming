@@ -1,2 +1,2 @@
 #!/bin/bash
-cgg hello.c -o cisfun
+cgg -o cisfun hello.o
