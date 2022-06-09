@@ -1,25 +1,27 @@
 #include "main.h"
 /**
- * print_sign - check the code
+ * @brief 
  * 
- * @n: variable
- * Return: Always 0.
  */
+* 
+* @n: variable
+* Return: Always 0.
+*/
 int print_sign(int n)
 {
     if (n > 0)
 {
-        return (1);
-        _putchar('+');
+        _putchar(43);
+            return (1);
 }
-       else if (n == 0)
+    else if (n < 0)
 {
-            return (0);
-         _putchar('+');
+    _putchar(45);
+        return (-1);      
 }
-        else
+    else
 { 
-             return (-1);
-            _putchar ('-');
+    _putchar (48);
+        return (0);      
 }
 }
