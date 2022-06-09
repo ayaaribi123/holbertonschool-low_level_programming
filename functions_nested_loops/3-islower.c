@@ -6,15 +6,8 @@
  */
 int _islower(int c)
 {
-int a
-{
-if (a == 'C');
-printf(1);
-}
-{
-else if (a != 'C');
-printf(0);
-printf('\n');
+if (c <= 97 && c <= 122)
+return (1);  
+else
 return (0);
-}
-}
+}	
