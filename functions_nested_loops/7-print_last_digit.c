@@ -4,10 +4,10 @@
 *@a: variable
 *Return: Always 0.
 */
-int print_last_digit(int a)
+int print_last_digit(int a,)
 {
-if (n % 10)
-return (n);
+if (a % 10)
+return (a);
 else
 return (0);
 }
