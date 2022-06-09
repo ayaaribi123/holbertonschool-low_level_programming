@@ -2,7 +2,6 @@
 /**
 * print_last_digit - check the code
 *@a: variable
-*@n:variable
 *Return: Always 0.
 */
 int print_last_digit(int a)
