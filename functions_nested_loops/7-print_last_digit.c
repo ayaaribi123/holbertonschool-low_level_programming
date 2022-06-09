@@ -11,6 +11,6 @@ n = a % 10;
 if (n < 10)
 n *= -1;
 
-_putchar (a + '0');
-    return (a);
+_putchar (n + '0');
+    return (n);
  }
