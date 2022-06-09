@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
 /**
-* _abs - check the code
-* @n: variable
-* Return: Always 0.
+*_abs - check the code
+*@n: variable
+*Return: Always 0.
 */
 int _abs(int)
 {
