@@ -3,7 +3,7 @@
 /**
 *mul - check the code
 *
-*@c: parameter
+*@a: parameter
 *@b: parameter
 *Return: Multiplies
 */
