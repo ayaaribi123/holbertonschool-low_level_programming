@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdio.h>
+#include <ctype.h>
 
 /**
-*_isdigit - check the code
+*_isdigit - check uper and return 0 or 1
 *
 *@c: variable
 *Return: 0 or 1
