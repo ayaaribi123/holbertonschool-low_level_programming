@@ -1,9 +1,10 @@
 #include "main.h"
+#include <stdio.h>
 /**
 *__isdigit - check the code
 *
 *@c: variable
-*Return: Always 0.
+*Return: 0 or 1
 */
 int _isdigit(int c)
 {
