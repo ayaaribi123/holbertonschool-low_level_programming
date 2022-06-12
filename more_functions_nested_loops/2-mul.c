@@ -3,8 +3,8 @@
 /**
 *mul - check the code
 *
-*@c: variable
-*@b: variable
+*@c: parameter
+*@b: parameter
 *Return: Multiplies
 */
 int mul(int a, int b)
