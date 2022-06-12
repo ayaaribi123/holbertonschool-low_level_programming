@@ -17,7 +17,7 @@ putchar('_');
 }
 putchar('\n');
 }
-else 
+else
 {
 putchar ('\n');
 }
