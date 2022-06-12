@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
 *print_numbers - check the code
 *
@@ -10,7 +10,7 @@ void print_numbers(void)
 int n;
 for (n =0; n < 10; n++)
 { 
-_putchar(n + '0');
+putchar (n + '0');
 }
-_putchar('\n');
+putchar ('\n');
 }
