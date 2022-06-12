@@ -5,7 +5,7 @@
 *
 *@c: number
 *@b: number
-*Return: number
+*Return: Multiplies
 */
 int mul(int a, int b)
 {
