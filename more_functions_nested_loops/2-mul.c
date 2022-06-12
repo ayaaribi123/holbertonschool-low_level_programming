@@ -3,8 +3,8 @@
 /**
 *mul - check the code
 *
-*@c: number
-*@b: number
+*@c: the number
+*@b: the number
 *Return: Multiplies
 */
 int mul(int a, int b)
