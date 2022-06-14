@@ -9,5 +9,5 @@
 */
 void _puts(char *str)
 {
-    str(string, '\n') = '\0';
+    puts
 }
