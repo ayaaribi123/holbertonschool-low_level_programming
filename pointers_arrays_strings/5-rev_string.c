@@ -15,13 +15,12 @@ void rev_string(char *s)
 	char str; 
 
 	len = strlen(s);
-	i =  len - 1 ;
 
-	for (; i != j ; i--, j++)
+	for (i = 0 ; i < j / 2; i++)
 	{
 		str = s[i];
-		s[i] = s [j];
-		s[j--] = str;
+		s[i] = s [len];
+		s[len--] = str;
 	}
 
 }
