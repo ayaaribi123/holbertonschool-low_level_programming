@@ -9,8 +9,7 @@
 void print_rev(char *s)
 {
 int i = 0;
-int str = " "
-for (i = *s ; i >= str ; i--)
+for (i = *s ; i >= 0 ; i--)
 putchar (*s);
 putchar('\n');
 }
