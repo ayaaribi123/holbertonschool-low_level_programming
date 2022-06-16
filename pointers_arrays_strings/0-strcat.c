@@ -10,7 +10,10 @@
 */
 char *_strcat(char *dest, char *src)
 {
-	printf('%s',*dest,*src)
-	return ('\n');
-    return 0;
- }
+	char *st;
+	st = dest + strlen(dest);
+	while (*src != '\0')
+	*st++ = *src++;
+	*st = '\0';
+	return (dest);
+}
