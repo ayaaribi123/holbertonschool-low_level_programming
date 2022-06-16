@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
-puts2 - check the code
+_strcat - check the code
 *
 *@src: pointer
 *@dest: pointer
