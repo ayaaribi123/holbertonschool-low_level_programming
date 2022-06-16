@@ -6,7 +6,7 @@
 *
 *@src: pointer
 *@dest: pointer
-@n: parameter
+@n: int
 *Return: Always 0.
 */
 char *_strncat(char *dest, char *src, int n)
