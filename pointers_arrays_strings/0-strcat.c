@@ -10,7 +10,7 @@
 */
 char *_strcat(char *dest, char *src)
 {
-	printf(%s\,dest,src)
-	return (\n)
+	printf('%s',*dest,*src)
+	return ('\n');
     return 0;
  }
