@@ -7,28 +7,33 @@ int _sqrt_recursion(int n);
  *@n: pointer
  *Return: Always 0.
  */
-int _sqrt(int n, int x)
+int _sqrt(int n, int root)
 {
-	if (x == n)
+	if (n == root*root)
 	{
-		return (x);
+		return (root);
 	}
 
-	if (x == 0)
+	if (root == n/2)
 	{
 		return (-1);
 	}
 	else
-		return (_sqrt(n, x + 1));
+		return (_sqrt(n,root + 1 ));
 }
 int _sqrt_recursion(int n)
 {
-	int x;
-	x = 1;
-	if (x < 0)
+
+	int root = 0;
+
+	if (n < 0)
 	{
 		return (-1);
 	}
+	if (n == 1)
+	{
+		return (1);
+	}
 
-	return (_sqrt(n, x));
+	return (_sqrt(n, root));
 }
