@@ -19,7 +19,7 @@ int _sqrt(int n, int root)
 		return (-1);
 	}
 	else
-		return (_sqrt(n , root + 1 ) );
+		return (_sqrt(n, root + 1 ) );
 }
 int _sqrt_recursion(int n)
 {
