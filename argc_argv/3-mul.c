@@ -11,12 +11,13 @@
 int main(int argc, char **argv)
 {
 	int a, b;
-	a = atoi ( argv [1] );
-	b = atoi ( argv [2] );
+
+	a = atoi (argv [1]);
+	b = atoi (argv [2]);
 
 	{
 
-		if ( argc < 3 )
+		if (argc < 3)
 	{
 			printf ("error");
 			return (1);
