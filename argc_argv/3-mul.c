@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 			printf ("error");
 			return (1);
 	}
-		else 
+else 
 	{
 			printf("%d\n", a * b);
 
