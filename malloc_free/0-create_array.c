@@ -3,7 +3,6 @@
 
 /**
  * create_array - check the code
- *
  * @c: character
  * @size: size
  * Return: 0
