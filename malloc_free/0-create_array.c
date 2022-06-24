@@ -3,7 +3,7 @@
 
 /**
  * create_array - check the code
- * 
+ *
  * @c: character
  * @size: size
  * Return: 0
@@ -22,12 +22,12 @@ char *create_array(unsigned int size, char c)
 	}
 	if (ar == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 	else
 	for (i = 0 ; i < size ; i++)
 	{
-	ar [i] = c;
+	ar [ i ] = c;
 	}
 	return (ar);
 }
