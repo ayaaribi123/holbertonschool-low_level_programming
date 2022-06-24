@@ -15,10 +15,10 @@ int i, len;
 
 len = 0;
 
-for (i = 0 ; str[i] ; i++)
+for ( i = 0 ; str[i] ; i++ )
 		len++;
 
-p = malloc((len)* sizeof(char));
+p = malloc((len) * sizeof(char));
 
 		if (p == NULL)
 			return (NULL);
