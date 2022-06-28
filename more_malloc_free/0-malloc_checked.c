@@ -17,7 +17,6 @@ a = malloc(b);
 if (a == NULL)
 {	
 	exit (98);
-	return (a);
 }
-return (0);
+return (a);
 }
