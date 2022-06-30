@@ -3,7 +3,7 @@
 /**
  * struct_dog - struct
  *@name: name of dog
- *@age: age of dog 
+ *@age: age of dog
  *@owner: the owner
  */
 
