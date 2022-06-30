@@ -2,8 +2,7 @@
 #include <stdlib.h>
 /**
  * new_dog - check the code
- *
- *@d: dog
+ * 
  *@name: name
  *@age: age
  *@owner: owner
