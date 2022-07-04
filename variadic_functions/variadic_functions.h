@@ -8,6 +8,6 @@ void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 void print_char(va_list str);
 void print_int(va_list num);
-void print_float(va_list f);
-void print_string(va_list s);
+void print_float(va_list fl);
+void print_string(va_list st);
 #endif
