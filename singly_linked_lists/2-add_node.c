@@ -3,8 +3,8 @@
 #include <string.h>
 /**
 * add_node - check the code
-*@str: the variable
-@head: the variable
+*@head: head
+*@str: char
 * Return: Always 0.
 */
 list_t *add_node(list_t **head, const char *str)
