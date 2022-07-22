@@ -44,10 +44,5 @@ int main(int argc, char **argv)
 	dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n");
 	if (f == -1)
 	dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n");
-	else 
-{
-	close(f);
-	close(t);
-}
 	return (0);
 }
