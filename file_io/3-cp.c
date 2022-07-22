@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	if (f == -1|| t == -1)
+	if (f == -1 || t == -1)
 	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", f);
 	exit(100);
 	return (0);
