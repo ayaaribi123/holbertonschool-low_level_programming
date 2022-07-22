@@ -35,18 +35,19 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 	w = write(t, c, r);
-	if (t == -1 || w == -1)
+	if (f == -1 || w == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE\n");
 		exit(99);
 	}
-	if (r == -1)
-	dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE\n");
-	exit (98);
-	if (f == -1 || f == -1)
+	if (t == -1)
 	dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n");
-	exit (100);
+	if (f == -1)
+	dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n");
+	else 
+{
 	close(f);
 	close(t);
+}
 	return (0);
 }
