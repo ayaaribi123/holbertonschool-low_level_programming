@@ -40,10 +40,7 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE\n");
 		exit(99);
 	}
-	if (t == -1)
-	dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n");
-	exit (100);
-	if (f == -1)
+	if (f == -1 ||t == -1)
 	dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n");
 	exit(100);
 	return (0);
