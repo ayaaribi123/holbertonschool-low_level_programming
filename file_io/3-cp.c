@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-*append_text_to_file - a function that appends text at the end of file.
-*@filename: variable
-*@text_content: variable
+*main - a function copies the content of a file to another file.
+*@argc: variable
+*@argv: variable
 *Return: Always 0.
 */
-int main (int argc, char **argv)
+int main(int argc, char **argv)
 {
 	int f, t, r, w;
 	char *c;
@@ -15,9 +15,8 @@ int main (int argc, char **argv)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-
 	f = open(argv[1], O_RDONLY);
-	if (f == -1 )
+	if (f == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE\n");
 		exit(98);
@@ -30,13 +29,11 @@ int main (int argc, char **argv)
 		dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE\n");
 		exit(99);
 	}
-
 	if (r == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE\n");
 		exit(98);
 	}
-
 	w = write(t, c, r);
 	if (t == -1 || w == -1)
 	{
