@@ -7,11 +7,11 @@
 *@str: pointer
 *Return: Always 0.
 */
-void puts2(char *str) 
+void puts2(char *str)
 {
 	int i;
 	int l = strlen(str);
-	
+
 	for (i = 0; i < l; i++)
 	{
 		if (i % 2 == 0)
