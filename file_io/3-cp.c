@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 	f = open(argv[1], O_RDONLY);
 	if (f == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE\n");
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	c = argv[2];
@@ -26,23 +26,23 @@ int main(int argc, char **argv)
 	t = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (t == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE\n");
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
 	if (r == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE\n");
+		dprintf(STDERR_FILENO, "Error: Can't read from file %sn", argv[1]);
 		exit(98);
 	}
 	w = write(t, c, r);
 	if (f == -1 || w == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE\n");
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
 	if (t == -1)
-	dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n");
+	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", f);
 	if (f == -1)
-	dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n");
+	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", f);
 	return (0);
 }
