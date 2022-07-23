@@ -29,7 +29,6 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 	w = write(t, c, r);
-
 	if (t == -1 || w == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
@@ -38,9 +37,8 @@ int main(int argc, char **argv)
 	}
 	r = read(f, c, 1024);
 	t = open(argv[2], O_WRONLY | O_APPEND, 1024);
-
+	}
 	while (r > 0);
-	
 	if (f == -1 || t == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", f);
@@ -48,7 +46,6 @@ int main(int argc, char **argv)
 	}
 	return (0);
 }
-
 
 /**
 *b_buffer - a function copies the content of a file to another file.
