@@ -39,7 +39,7 @@ int main(int argc, char **argv)
 	t = open(argv[2], O_WRONLY | O_APPEND, 1024);
 	}
 	while (r > 0);
-	{
+
 	if (f == -1 || t == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", f);
@@ -50,7 +50,7 @@ int main(int argc, char **argv)
 	close(f);
 	return (0);
 }
-}
+
 
 /**
 *b_buffer - a function copies the content of a file to another file.
