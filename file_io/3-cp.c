@@ -51,7 +51,6 @@ int main(int argc, char **argv)
 	return (0);
 }
 
-
 /**
 *b_buffer - a function copies the content of a file to another file.
 *@file: variable
