@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 
 	if (r == -1 || f == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %sn", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s", argv[1]);
 		free(c);
 		exit(98);
 	}
