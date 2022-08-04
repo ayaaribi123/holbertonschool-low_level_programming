@@ -26,10 +26,11 @@ else
 {
 printf ("%d" , a);
 }
-else 
+if (a != 100)
 {
-printf(" ");
+putchar(' ');
 }
 printf ("\n");
 }
+return (0);
 }
