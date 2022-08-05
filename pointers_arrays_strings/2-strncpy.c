@@ -6,19 +6,20 @@
 *
 *@src: pointer
 *@dest: pointer
+*@n: pointer
 *Return: Always 0.
 */
 char *_strncpy(char *dest, char *src, int n)
 {
-int n = dest;
+int i;
 
-    while(*src != '\0')
+    i = 0;
+    while(*src != '\0' && n < i)
     {
         *dest = *src;
         dest++;
         src++;
     }
 
-    *dest = '\0'; 
-    return n;
+    return (dest);
 }
