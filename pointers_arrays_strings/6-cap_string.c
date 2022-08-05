@@ -20,12 +20,7 @@ char *cap_string(char *s)
 			if (s[i] == ' ')
 		{
 			++i;
-			if (s[i] >= 'A' && s[i] <= 'Z')
-			{
-				s[i] = s[i] - 32;
-				continue;
-			}
-			}
+		}
 		else
 		{
 			if (s[i] >= 'A' && s[i] <= 'Z')
