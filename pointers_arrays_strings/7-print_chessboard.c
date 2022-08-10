@@ -4,7 +4,7 @@
 /**
 *print_chessboard - check the code
 *
-*@s: char
+*@a: char
 *Return: Always 0.
 */
 void print_chessboard(char (*a)[8])
