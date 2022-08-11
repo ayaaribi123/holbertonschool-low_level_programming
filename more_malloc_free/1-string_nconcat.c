@@ -28,13 +28,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = ""; }
 		if (n >= strlen(s2))
 		c = strlen(s1) + strlen(s2);
-		else 
+		else
 			c = strlen(s1) + n;
 	a = malloc(sizeof(char) * (c + 1));
 
 	if (a == NULL)
 	{
-		return (NULL);}
+		return (NULL); }
 	for (b = 0; b < c; b++)
 	{
 	if (b < strlen(s1))
