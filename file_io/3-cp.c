@@ -1,6 +1,6 @@
 #include "main.h"
 char *b_buffer(char *file);
-void close_iit(int fd);
+
 /**
 *main - a function copies the content of a file to another file.
 *@argc: variable
@@ -45,8 +45,8 @@ int main(int argc, char **argv)
 		exit(100);
 	}
 	free(c);
-	close_iit(t);
-	close_iit(f);
+	close(t);
+	close(f);
 	return (0);
 }
 
@@ -69,19 +69,4 @@ char *b_buffer(char *file)
 	}
 	return (c);
 }
-/**
-*close_iit - a function copies the content of a file to another file.
-*@fd: variable
-*Return: Always 0
- */
-void close_iit(int fd)
-{
-	int d;
 
-d = close(fd);
-if (d == -1)
-{
-	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
-	exit(100);
-}
-}
