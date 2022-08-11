@@ -69,3 +69,19 @@ char *b_buffer(char *file)
 	}
 	return (c);
 }
+/**
+*close - a function copies the content of a file to another file.
+*@f: variable
+*Return: Always 0
+ */
+char close(int f)
+{
+	int d;
+
+c = close(f);
+if (d == -1)
+{
+	dprintf(STDERR_FILENO, "Error: Can't close f %d\n", f);
+	exit(100);
+}
+}
